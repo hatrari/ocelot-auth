@@ -1,0 +1,19 @@
+{
+  "Routes": [{
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 5000
+      }
+    ],
+    "DownstreamPathTemplate": "/api/customers",
+    "UpstreamPathTemplate": "/customers",
+    "UpstreamHttpMethod": ["GET"],
+    "RouteIsCaseSensitive": false,
+    "DownstreamScheme": "http",
+    "AuthenticationOptions": {
+      "AuthenticationProviderKey": "tnsh2423tshstnhaue234432",
+      "AllowedScopes": []
+    }
+  }]
+}

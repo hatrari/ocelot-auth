@@ -13,6 +13,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using getway.Entities;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 
 namespace getway
 {
@@ -41,6 +43,7 @@ namespace getway
           ValidateAudience = false
         };
       });
+      services.AddOcelot();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +63,8 @@ namespace getway
       {
         endpoints.MapControllers();
       });
+
+      app.UseOcelot().Wait();
     }
   }
 }
