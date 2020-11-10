@@ -12,9 +12,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-using auth.Entities;
+using getway.Entities;
 
-namespace auth
+namespace getway
 {
   public class Startup
   {

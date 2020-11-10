@@ -5,13 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using auth.Entities;
+using getway.Entities;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using Microsoft.Extensions.Configuration;
 
-namespace auth.Controllers
+namespace getway.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]

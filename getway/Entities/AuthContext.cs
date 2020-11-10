@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace auth.Entities
+namespace getway.Entities
 {
   public class AuthContext : DbContext
   {

@@ -1,4 +1,4 @@
-namespace auth.Entities
+namespace getway.Entities
 {
   public class User
   {
