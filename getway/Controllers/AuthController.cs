@@ -11,7 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using Microsoft.Extensions.Configuration;
 
-namespace getway.Controllers
+namespace Getway.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]

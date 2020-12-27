@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-using getway.Entities;
+using Getway.Entities;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
@@ -63,8 +63,6 @@ namespace getway
       {
         endpoints.MapControllers();
       });
-
-      app.UseOcelot().Wait();
     }
   }
 }

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace getway
+namespace Getway
 {
   public class Program
   {
@@ -21,6 +21,11 @@ namespace getway
         .ConfigureWebHostDefaults(webBuilder =>
         {
           webBuilder.UseStartup<Startup>();
+        }).ConfigureAppConfiguration((hostingContext, config) =>
+        {
+          config
+          .SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
+          .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
         });
   }
 }
